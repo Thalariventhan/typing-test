@@ -1,0 +1,21 @@
+{
+  "name": "typing-test",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rsbuild dev --open",
+    "build": "rsbuild build --mode development",
+    "prod": "rsbuild build --mode production",
+    "preview": "rsbuild preview"
+  },
+  "dependencies": {
+    "solid-js": "^1.9.2"
+  },
+  "devDependencies": {
+    "@rsbuild/core": "^1.0.13",
+    "@rsbuild/plugin-babel": "^1.0.1",
+    "@rsbuild/plugin-solid": "^1.0.2",
+    "@types/node": "^22.8.1",
+    "compression-webpack-plugin": "^11.1.0",
+    "typescript": "^5.6.3"
+  }
+}
