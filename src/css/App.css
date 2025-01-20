@@ -1,0 +1,395 @@
+/* Global Styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	color: #111;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0.5em 0;
+}
+
+p {
+	margin: 0 0 1em;
+	line-height: 1.6;
+}
+
+a {
+	color: #3498db;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+	background: #333;
+	color: #fff;
+	/* padding: 1em 0; */
+	text-align: center;
+}
+
+header h1 {
+	margin: 0;
+	font-size: 2.5em;
+}
+
+/* Navigation Styles */
+nav {
+	background: #444;
+	color: #fff;
+	padding: 0.5em;
+	text-align: center;
+}
+
+nav a {
+	color: #fff;
+	margin: 0 1em;
+}
+
+nav a:hover {
+	color: #ff6347;
+}
+
+/* Main Content Styles */
+
+main {
+	padding: 2em;
+	background: #fff;
+	margin: 1em auto;
+	max-width: 800px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+main p {
+	margin-bottom: 1.5em;
+}
+
+/* Sidebar Styles */
+aside {
+	background: #f4f4f4;
+	padding: 1em;
+	margin: 1em 0;
+}
+
+aside h3 {
+	margin-top: 0;
+}
+
+aside ul {
+	list-style: none;
+	padding: 0;
+}
+
+aside ul li {
+	margin-bottom: 0.5em;
+}
+
+/* Footer Styles */
+footer {
+	background: #333;
+	color: #fff;
+	text-align: center;
+	padding: 1em 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+footer p {
+	margin: 0;
+}
+
+/* Utility Classes */
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+/* Font Color Utility Classes */
+.text-color-primary {
+	color: #3498db;
+}
+
+.text-color-secondary {
+	color: #2ecc71;
+}
+
+.text-color-danger {
+	color: #e74c3c;
+}
+
+.text-color-warning {
+	color: #f1c40f;
+}
+
+.text-color-info {
+	color: #1abc9c;
+}
+
+.text-color-light {
+	color: #ecf0f1;
+}
+
+.text-color-grey {
+	color: #95a5a6;
+}
+
+.text-color-dark {
+	color: #2c3e50;
+}
+
+.mr-0 {
+	margin-right: 0;
+}
+
+.ml-0 {
+	margin-left: 0;
+}
+
+.pl-0 {
+	padding-left: 0;
+}
+
+.pr-0 {
+	padding-right: 0;
+}
+.mt-1 {
+	margin-top: 1em;
+}
+
+.mb-1 {
+	margin-bottom: 1em;
+}
+
+.ml-1 {
+	margin-left: 1em;
+}
+
+.mr-1 {
+	margin-right: 1em;
+}
+
+.pt-1 {
+	padding-top: 1em;
+}
+
+.pb-1 {
+	padding-bottom: 1em;
+}
+
+.pl-1 {
+	padding-left: 1em;
+}
+
+.pr-1 {
+	padding-right: 1em;
+}
+
+.hidden {
+	display: none;
+}
+/* Border Radius Utility Classes */
+.radius-0 {
+	border-radius: 0;
+}
+
+.radius-1 {
+	border-radius: 5px;
+}
+
+.radius-2 {
+	border-radius: 10px;
+}
+
+.radius-3 {
+	border-radius: 15px;
+}
+
+.radius-4 {
+	border-radius: 20px;
+}
+
+.radius-5 {
+	border-radius: 25px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* Font Weight Utility Classes */
+.font-weight-100 {
+	font-weight: 100;
+}
+
+.font-weight-200 {
+	font-weight: 200;
+}
+
+.font-weight-300 {
+	font-weight: 300;
+}
+
+.font-weight-400 {
+	font-weight: 400;
+}
+
+.font-weight-500 {
+	font-weight: 500;
+}
+
+.font-weight-600 {
+	font-weight: 600;
+}
+
+.font-weight-700 {
+	font-weight: 700;
+}
+
+.font-weight-800 {
+	font-weight: 800;
+}
+
+.font-weight-900 {
+	font-weight: 900;
+}
+/* Outline Utility Classes */
+.outline-none {
+	outline: none;
+}
+
+.outline-solid {
+	outline: 1px solid #333;
+}
+
+.outline-dashed {
+	outline: 1px dashed #333;
+}
+
+.outline-dotted {
+	outline: 1px dotted #333;
+}
+
+.outline-thick {
+	outline: 2px solid #333;
+}
+
+.outline-blue {
+	outline: 1px solid #3498db;
+}
+
+.outline-red {
+	outline: 1px solid #e74c3c;
+}
+
+.outline-green {
+	outline: 1px solid #2ecc71;
+}
+/* Font Family Utility Classes */
+.font-family-arial {
+	font-family: Arial, sans-serif;
+}
+
+.font-family-verdana {
+	font-family: Verdana, sans-serif;
+}
+
+.font-family-georgia {
+	font-family: Georgia, serif;
+}
+
+.font-family-tahoma {
+	font-family: Tahoma, sans-serif;
+}
+
+.font-family-courier {
+	font-family: "Courier New", Courier, monospace;
+}
+
+.font-family-times {
+	font-family: "Times New Roman", Times, serif;
+}
+
+/* Font Size Utility Classes */
+.font-size-xs {
+	font-size: 0.75rem;
+}
+
+.font-size-sm {
+	font-size: 0.875rem;
+}
+
+.font-size-md {
+	font-size: 1rem;
+}
+
+.font-size-lg {
+	font-size: 1.25rem;
+}
+
+.font-size-xl {
+	font-size: 1.5rem;
+}
+
+.font-size-xxl {
+	font-size: 2rem;
+}
+
+.place-content-center {
+	place-content: center;
+}
+
+.p-0 {
+	padding: 0%;
+}
+
+.py-0 {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.py-1 {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+/* Increase cursor size in contenteditable elements */
+/* background-color: #000000; Adjust color for cursor color */
+/* animation: blink 1s step-end infinite; */
+
+cursor {
+	width: 2px;
+	background-color: #000000; /* Adjust color for cursor color */
+}
+
+@keyframes blink {
+	from,
+	to {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}
