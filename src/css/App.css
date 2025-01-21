@@ -326,11 +326,11 @@ footer p {
 }
 
 .font-family-courier {
-	font-family: "Courier New", Courier, monospace;
+	font-family: "Courier New", monospace;
 }
 
 .font-family-times {
-	font-family: "Times New Roman", Times, serif;
+	font-family: "Times New Roman", serif;
 }
 
 /* Font Size Utility Classes */

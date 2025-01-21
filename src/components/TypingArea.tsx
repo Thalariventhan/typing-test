@@ -57,35 +57,29 @@ const TypingArea = (props: TypingAreaProps): JSX.Element => {
 
 		if (typedTextSpan && untypedTextSpan) {
 			const range = document.createRange()
-			const selection = window.getSelection()
-			console.log(range, selection)
 			range.setStartAfter(typedTextSpan)
 			range.setEndBefore(untypedTextSpan)
 
+			const selection = window.getSelection()
 			selection?.removeAllRanges()
 			selection?.addRange(range)
 		}
 	}
 
 	return (
-		<>
-			<main
-				class='font-family-courier font-size-xl outline-none radius-5 text-left '
-				onkeydown={handleKeys}
-				onclick={handleClick}
-				contentEditable={true}
-			>
-				<span id='typed-text' class='bold mr-0 ml-0 pr-0 pl-0'>
-					{typedText()}
-				</span>
-				<span
-					id='untyped-text'
-					class='bold text-color-grey mr-0 ml-0 pl-0 pr-0'
-				>
-					{untypedText()}
-				</span>
-			</main>
-		</>
+		<main
+			class='font-family-courier font-size-xl outline-none radius-5 text-left'
+			onkeydown={handleKeys}
+			onclick={handleClick}
+			contentEditable={true}
+		>
+			<span id='typed-text' class='bold mr-0 ml-0 pr-0 pl-0'>
+				{typedText()}
+			</span>
+			<span id='untyped-text' class='bold text-color-grey mr-0 ml-0 pl-0 pr-0'>
+				{untypedText()}
+			</span>
+		</main>
 	)
 }
 
