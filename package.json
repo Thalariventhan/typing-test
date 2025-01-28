@@ -2,10 +2,10 @@
 	"name": "typing-test",
 	"version": "1.0.0",
 	"scripts": {
-		"dev": "rsbuild dev --open",
 		"lint": "biome lint",
 		"format-all": "biome format --write",
-		"build": "rsbuild build --mode development",
+		"dev": "rsbuild dev --open",
+		"stag": "rsbuild build --mode development",
 		"prod": "rsbuild build --mode production",
 		"preview": "rsbuild preview"
 	},
