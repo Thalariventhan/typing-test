@@ -6,20 +6,26 @@ type ReportSectionProps = {
 }
 
 const ReportSection = (props: ReportSectionProps): JSX.Element => {
-	const { mistake }: TextContent = props.textContent
+	const { mistake, generateText }: TextContent = props.textContent
 
 	function refresh(): void {
-		window.location.reload()
+		generateText()
 	}
 
 	return (
 		<div class='bold font-size-xxl text-center'>
-			<div>Mistakes : {mistake()}</div>
 			<button type='button' class='bold radius-1 py-0' onclick={refresh}>
 				<span class='font-size-md p-0'>↻</span>
 				&nbsp;
 				<span>Refresh</span>
 			</button>
+			<br />
+			<br />
+			<div class='text-color-grey'>
+				<span class='text-color-danger'>{mistake()}</span>
+				&nbsp;
+				<span>typos</span>
+			</div>
 		</div>
 	)
 }

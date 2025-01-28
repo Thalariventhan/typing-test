@@ -17,12 +17,16 @@ const useTextContent = (): TextContent => {
 	const [typedText, setTypedText] = createSignal<string>('')
 	const [untypedText, setUntypedText] = createSignal<string>('')
 	const [textIndex, setTextIndex] = createSignal<number>(0)
-	const { mistake, updateMistake }: ReportHook = useReport()
+	const { mistake, resetMistake, updateMistake }: ReportHook = useReport()
 
 	function generateText(): void {
 		const newText: string = generateRandomText()
 		setTextContent(newText)
 		setUntypedText(newText)
+		setTypedText('')
+		resetMistake()
+		setTextIndex(0)
+		setTextIndex(0)
 	}
 
 	function updateText(key: string): void {

@@ -23,11 +23,16 @@ const rspackPlugins = async (config) => {
 }
 
 export default defineConfig({
-	html: { title: 'Typer' },
+	html: {
+		title: 'Typer',
+		inject: 'body',
+	},
 	output: {
 		minify: true,
 		polyfill: 'usage',
 		distPath: { root: 'dist' },
+		inlineStyles: true,
+		inlineScripts: true,
 	},
 	server: { compress: true },
 	plugins: rsbuildPlugins,
